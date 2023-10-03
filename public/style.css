@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  #folderNameSpan {
+    color: black; /* Initial color */
+  }
+  
+  #folderNameSpan:hover {
+    color: red; /* Color on hover */
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default; /* This prevents the pointer cursor on the span */
+  }
+  .highlighted {
+    background-color:lightcoral;
+  }
+  .bordered {
+    border: 1px solid black;
+  }
+  #fileList {
+    margin-top: 20px;
+    width:fit-content;
+  }
+  .imageDivs{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    align-items: flex-start;
+    width:fit-content;
+  }
+  .googleSearchButton{
+    height:min-content;
+    margin-left: 50px;
+    align-self: center;
+  }
+  .biggerDivs{
+    display:flex;
+    flex-wrap:wrap;
+    width:fit-content;
+  }
+  .file {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .renderButton{
+    width:100%;
+    height:40px;
+    margin-top:15px;
+  }
+  .inputDiv{
+    display:flex;
+    flex-direction: column;
+  }
+  .file img {
+    width: 120px;
+    margin-right: 10px;
+  }
+  .resultFile{
+    padding:5px;
+    align-items:center;
+    width:150px;
+    height:fit-content;
+    border:1px solid black;
+    overflow:hidden;
+
+  }
+  .resultFile img{
+    width: 120px;
+  }
+  .showResult{
+    display:flex;
+    flex-direction:row;
+  }
+  .truncate-text {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: auto;
+    line-height: 1.2;
+    -webkit-line-clamp: 3; /* Limit the content to two lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis (...) when text overflows */
+    word-wrap: break-word;
+  }
